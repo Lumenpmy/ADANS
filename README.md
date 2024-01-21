@@ -14,9 +14,13 @@ Our work presents an innovative three-stage approach, ADANS (Adversarial Normali
 
 3. **Anomaly Detector**: The final stage is tailored to generalize across normality shifts while retaining valuable knowledge acquired prior to adaptation. This ensures that the detection mechanism remains robust even as the data distribution evolves.
 
-## Experimental Validation
+The flowchart of ADANS is as follows.
 
-We have rigorously tested our method using the Kyoto 2006+ dataset to validate the efficacy of the ADANS method in addressing the normality shift problem in anomaly detection. Our comprehensive experiments demonstrate that our proposed method achieves superior performance over existing state-of-the-art (SOTA) techniques.
+![flowchart of ADANS](images/overview.pdf)
+
+## Experimental Validation
+overview
+We have rigorously tested our method using the Kyoto 2006+ dataset to validate the efficacy of the ADANS method in addressing the normality shift problem in anomaly detection. 
 
 ## Model Architecture
 
