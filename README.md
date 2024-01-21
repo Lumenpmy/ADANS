@@ -16,7 +16,7 @@ Our work presents an innovative three-stage approach, ADANS (Adversarial Normali
 
 The flowchart of ADANS is as follows.
 
-![flowchart of ADANS](images/overview.pdf)
+![flowchart of ADANS](image/overview.pdf)
 
 ## Experimental Validation
 overview
@@ -26,7 +26,7 @@ We have rigorously tested our method using the Kyoto 2006+ dataset to validate t
 
 Below is the schematic representation of the ADANS model:
 
-![Model diagram for detecting normality shift in ADANS](images/shift_detection.pdf)
-![Model diagram for adapting normality shift in ADANS](images/shift_adaption.pdf)
+![Model diagram for detecting normality shift in ADANS](image/shift_detection.pdf)
+![Model diagram for adapting normality shift in ADANS](image/shift_adaption.pdf)
 
 *For detailed information, methodologies, and specific experiment results, we encourage readers to consult our paper.*
