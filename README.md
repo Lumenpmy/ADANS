@@ -16,7 +16,7 @@ Our work presents an innovative three-stage approach, ADANS (Adversarial Normali
 
 The flowchart of ADANS is as follows.
 
-![flowchart of ADANS](image/overview.pdf)
+![flowchart of ADANS](image/overview.png)
 
 ## Experimental Validation
 overview
