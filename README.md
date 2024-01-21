@@ -26,7 +26,7 @@ We have rigorously tested our method using the Kyoto 2006+ dataset to validate t
 
 Below is the schematic representation of the ADANS model:
 
-![Model diagram for detecting normality shift in ADANS](image/shift_detection.pdf)
-![Model diagram for adapting normality shift in ADANS](image/shift_adaption.pdf)
+![Model diagram for detecting normality shift in ADANS](image/shift_detection.png)
+![Model diagram for adapting normality shift in ADANS](image/shift_adaption.png)
 
 *For detailed information, methodologies, and specific experiment results, we encourage readers to consult our paper.*
