@@ -67,7 +67,6 @@ class ShiftAdapter:
         def estimulate_labeling(X_n,y_n, top_samples_B, top_indices_B, label_num):
             print('NOTICE: simulating labelling...')
             remain_y_t = y_n[top_indices_B]
-            print('Filter', len(remain_y_t[remain_y_t == 1]), 'anomalies in remain_X_tre')
             top_samples_B = top_samples_B[remain_y_t == 0]
             top_indices_B = np.where(remain_y_t == 0)[0]
             print(" (label_num:%d, remain_X_n:%d, X_n:%d)" % (label_num, len(top_samples_B), len(X_n)))
@@ -260,7 +259,6 @@ class ShiftAdapter:
         def estimulate_labling(X_n, y_n, top_samples_B, top_indices_B, label_num):
             print('NOTICE: simulating labelling...')
             remain_y_n = y_n[top_indices_B]
-            print('Filter', len(remain_y_n[remain_y_n == 1]), 'anomalies in remain_X_n')
             # 获取布尔数组对应的索引
             indices = np.where(remain_y_n == 0)[0]
 

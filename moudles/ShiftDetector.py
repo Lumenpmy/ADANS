@@ -5,7 +5,6 @@ import myutils as utils
 import matplotlib.pyplot as plt
 from scipy.interpolate import make_interp_spline
 
-
 class ShiftDetector:
     def __init__(self, method=None):
 
@@ -22,6 +21,7 @@ class ShiftDetector:
         else:
             print('Error Params <method>')
             exit(-1)
+
 
     def process(self,
                 model_res):
@@ -76,6 +76,7 @@ class ShiftDetector:
 
 
 
+
     def Monte_Carlo(self, x, y, alpha=0.05, iterations=1000):
         np.random.seed(0)
         n = len(x)
@@ -108,7 +109,6 @@ class ShiftDetector:
         return p_value, conf_int
 
         # 可视化直方图
-
     def visualize_hists(self,
                         res_1,
                         res_2,
@@ -116,8 +116,8 @@ class ShiftDetector:
                         color_2='#AAAAAA'):
         self.bin_num = utils.get_params('ShiftDetector')['test_bin_num']  # 为10
         self.bin_array = np.linspace(0., 1., self.bin_num + 1)  # 将[0,1]分成含有11个元素的均匀分布的序列
-        legend_1 = 'old shifting score'  # (Calibrated)
-        legend_2 = 'new shifting score'  # (Calibrated)
+        legend_1 = 'shifting score in old data set'  # (Calibrated)
+        legend_2 = 'shifting score in new data set'  # (Calibrated)
 
         res_1 = list(np.histogram(res_1, bins=self.bin_array))  # 将元组结果转成列表
         res_1[0] = res_1[0] / np.sum(res_1[0])  # cres[0]表示列表形式的每个区间的元素个数，更新后，得到频率分布的列表
@@ -155,7 +155,7 @@ class ShiftDetector:
         plt.ylim(ymin=0)
         plt.xlabel('Shifting Score', fontsize=20, fontweight='bold')  # 添加横坐标标签
         plt.ylabel('Frequency', fontsize=20, fontweight='bold')  # 添加纵坐标标签
-        plt.legend(prop={'size': 20, 'weight': 'bold'})
+        plt.legend(prop={'size': 15, 'weight': 'bold'})
         plt.xticks(fontsize=20, fontweight='bold')  # 增大字体并加粗
         plt.yticks(fontsize=20, fontweight='bold')  # 增大字体并加粗
 
