@@ -7,7 +7,7 @@ Few works tried to detect and adapt normality shifts, however, they are both pro
 
 Our work presents an innovative three-stage approach, ADANS (Adversarial Normality Shift Adjustment), to robustly manage the aforementioned challenges of normality shifts in IoT environments. The approach is comprised of the following components:
 
-1.**Normality Shift Screener**: We propose an antithetical filtering mechanism to select less but representative samples and eliminate the confusion caused by anomalous ones.
+1. **Normality Shift Screener**: We propose an antithetical filtering mechanism to select less but representative samples and eliminate the confusion caused by anomalous ones.
 
 2. **Normality Shift Detector**: The latter Detector is designed to amplify the distinction of any given distribution to more effortlessly identify the shifts in the distribution level, therefore, eliminating the perturbation of sample-level shifts.
 
