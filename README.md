@@ -18,7 +18,7 @@ The flowchart of ADANS is as follows.
 ![flowchart of ADANS](image/overview.png)
 
 ## Experimental Validation
-overview
+
 We have rigorously tested our method using the Kyoto 2006+ dataset to validate the efficacy of the ADANS method in addressing the normality shift problem in anomaly detection. 
 
 ## Model Architecture
